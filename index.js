@@ -99,7 +99,7 @@ function createRock(x) {
      */
     
     if (top < GAME_HEIGHT) {
-      rock.style.top = `${top += 2}px`;
+      rock.style.top = `${top += 3}px`;
       window.requestAnimationFrame(moveRock);
     } else {
       rock.remove();
@@ -198,5 +198,5 @@ function start() {
 
   gameInterval = setInterval(function() {
     createRock(Math.floor(Math.random() *  (GAME_WIDTH - 20)));
-  }, 1000);
+  }, 200);
 }
